@@ -1,2 +1,2 @@
 # javascript-music-box
-this is simple mouse box made in js  
+this is simple mouse music box made in js  
