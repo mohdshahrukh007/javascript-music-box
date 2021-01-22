@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Box</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="./musicbox.css">
+</head>
+<body>
+    <div class="wrapper">
+  <h1 class="heading" >Music Box</h1>
+
+<div class=" play ">
+
+    <button id="handleplay2" onclick="handleplay()" class=" btn btn-success btn-lg ">Tap To Play
+    </button>
+</div>
+    </div>
+      <div class="wrapper">
+        <audio  allow="autoplay"  id="cAudio">
+          <source src="http://torchcodelab.com/media/c_note.mp3" type="audio/mpeg"></source>
+          <source src="http://torchcodelab.com/media/c_note.ogg" type="audio/ogg"></source>
+          <source src="http://torchcodelab.com/media/c_note.wav" type="audio/wav"></source>
+        </audio>
+        <audio allow="autoplay" id="dAudio">
+          <source src="http://torchcodelab.com/media/d_note.mp3" type="audio/mpeg"></source>
+          <source src="http://torchcodelab.com/media/d_note.ogg" type="audio/ogg"></source>
+          <source src="http://torchcodelab.com/media/d_note.wav" type="audio/wav"></source>
+        </audio>
+        <audio allow="autoplay" id="eAudio">
+          <source src="http://torchcodelab.com/media/e_note.mp3" type="audio/mpeg"></source>
+          <source src="http://torchcodelab.com/media/e_note.ogg" type="audio/ogg"></source>
+          <source src="http://torchcodelab.com/media/e_note.wav" type="audio/wav"></source>
+        </audio>
+        <audio allow="autoplay" id="fAudio">
+      
+          <source src="http://torchcodelab.com/media/f_note.mp3" type="audio/mpeg"></source>
+          <source src="http://torchcodelab.com/media/f_note.ogg" type="audio/ogg"></source>
+          <source src="http://torchcodelab.com/media/f_note.wav" type="audio/wav"></source>
+        </audio>
+        <audio allow="autoplay" id="gAudio">
+          <source src="http://torchcodelab.com/media/g_note.mp3" type="audio/mpeg"></source>
+          <source src="http://torchcodelab.com/media/g_note.ogg" type="audio/ogg"></source>
+          <source src="http://torchcodelab.com/media/g_note.wav" type="audio/wav"></source>
+        </audio>
+        <audio allow="autoplay" id="aAudio">
+          <source src="http://torchcodelab.com/media/a_note.mp3" type="audio/mpeg"></source>
+          <source src="http://torchcodelab.com/media/a_note.ogg" type="audio/ogg"></source>
+          <source src="http://torchcodelab.com/media/a_note.wav" type="audio/wav"></source>
+        </audio>
+        <audio allow="autoplay" id="bAudio">
+          <source src="http://torchcodelab.com/media/b_note.mp3" type="audio/mpeg"></source>
+          <source src="http://torchcodelab.com/media/b_note.ogg" type="audio/ogg"></source>
+          <source src="http://torchcodelab.com/media/b_note.wav" type="audio/wav"></source>
+        </audio>
+       
+        <div id="instrument">
+           <div id="c" class="box"></div>
+          <div id="d" class="box"></div>
+          <div id="e" class="box"></div>
+          <div id="f" class="box"></div>
+          <div id="g" class="box"></div>
+          <div id="a" class="box"></div>
+          <div id="b" class="box"></div>
+        </div>
+      </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+ <script>
+
+        // $("#handleplay").onclick(function ()
+         function handleplay() {
+          document.getElementById("instrument").style.display="block";
+  };
+
+  $(document).ready(function () {
+
+  $("#c").mouseover(function () {
+    // cNote.currentTime = 0;
+    var cNote = document.getElementById("cAudio");
+    cNote.currentTime = 0;
+
+    // This plays the audio file.
+    cNote.play();
+  });
+
+  // This controls the button for the d note.
+  var dNote = document.getElementById("dAudio");
+  $("#d").mouseover(function () {
+    dNote.currentTime = 0;
+    dNote.play();
+  });
+
+  // This controls the button for the e note.
+
+  var eNote = document.getElementById("eAudio");
+
+  $("#e").mouseover(function () {
+    eNote.currentTime = 0;
+    eNote.play();
+  });
+
+  // This controls the button for the f note.
+
+  var fNote = document.getElementById("fAudio");
+
+  $("#f").mouseover(function () {
+    fNote.currentTime = 0;
+    fNote.play();
+  });
+
+  // This controls the button for the g note.
+
+  var gNote = document.getElementById("gAudio");
+
+  $("#g").mouseover(function () {
+    gNote.currentTime = 0;
+    gNote.play();
+  });
+
+  // This controls the button for the a note.
+
+  var aNote = document.getElementById("aAudio");
+
+  $("#a").mouseover(function () {
+    aNote.currentTime = 0;
+    aNote.play();
+  });
+
+  // This controls the button for the b note.
+
+  var bNote = document.getElementById("bAudio");
+
+  $("#b").mouseover(function () {
+    bNote.currentTime = 0;
+    bNote.play();
+  });
+});
+
+      </script>
+
+    </body>
+</html>
